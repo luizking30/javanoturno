@@ -18,7 +18,6 @@ public class App {
         System.out.print("Digite sua idade: ");
         idade = sc.nextInt();
         sc.nextLine(); // limpa buffer
-
         do {
             idademinima = 0; // resetar
 
@@ -28,6 +27,7 @@ public class App {
             System.out.println("3. Poeira em Alto Mar");
             System.out.println("4. As Tranas da Vovó");
             System.out.println("5. A Vingança do Peixe Frito");
+            System.out.println("6. encerrar programa");
 
             System.out.print("Escolha o número do filme: ");
             sala = sc.nextLine();
@@ -53,6 +53,8 @@ public class App {
                     filme = "A Vingança do Peixe Frito";
                     idademinima = 21;
                     break;
+                case "6":
+                    return; // encerra o programa
                 default:
                     System.out.println("Opção inválida!");
                     idademinima = Integer.MAX_VALUE;

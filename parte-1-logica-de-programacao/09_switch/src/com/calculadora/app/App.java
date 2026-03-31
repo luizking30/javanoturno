@@ -28,6 +28,7 @@ public class App {
     System.out.println("2- Subtração");
     System.out.println("3- Multiplicação");
     System.out.println("4- Divisão");
+    System.out.println("5- Encerrar programa");
     operador = sc.nextLine();
 
     //verifica a operação desejada
@@ -48,6 +49,10 @@ public class App {
             resultado = num1 / num2;
             System.out.println("Resultado: " + resultado);
             break; 
+        case "5":
+             // encerra o programa
+            System.out.println("Encerrando o programa...");  
+            break;
         default:
             System.out.println("Operação inválida. Por favor, escolha uma opção válida.");          
       }
